@@ -55,88 +55,39 @@ header nav .commander {
 
 }
 
-/* Conteneur principal du formulaire */
-.contact-form {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 20px;
-
+.colonne_formulaire_nombre {
+    width: 25%;
 }
-
-/* Conteneur des titres des sections */
-.form-title {
-    display: flex;
-    justify-content: space-between; /* Espace entre les titres */
-    margin-bottom: 20px;
+.formulaire_nombre {
+    margin-left: 100px;
 }
-.section-title {
-    font-weight: 700;
+.colonne_titre {
     font-size: 30px;
-    color: #333;
-    margin: 20;
-}
-
-/* Conteneur pour les deux sections en colonnes */
-.form-container {
-    display: flex;
-    gap: 70px;
-}
-
-
-/* Sections gauche et droite */
-.form-section {
-    flex: 1;
-}
-/* Section gauche et droite */
-.left-section {
-    margin-right: 20px; /* Espace entre les colonnes */
-}
-
-.right-section {
-    margin-left: 20px; /* Espace entre les colonnes */
-}
-
-
-/* Groupe de chaque champ du formulaire */
-.form-group {
-    margin-bottom: 15px;
-}
-
-/* Style des labels */
-.form-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-}
-
-/* Style des champs de saisie */
-.form-input {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 7px;
-    box-sizing: border-box;
-}
-
-/* Bouton de soumission */
-.form-submit {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.submit-button {
-    padding: 12px 24px;
-    background-color:#E0B9B4;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
+    border-top: 2px solid white;
+    padding-top: 60px;
+    position: relative; /* Nécessaire pour positionner le pseudo-élément */
 }
-
+.colonne_titre::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%; /* Positionne la ligne verticalement au centre */
+    transform: translateX(-50%); /* Centre parfaitement la ligne */
+    width: 2px; /* Largeur de la ligne */
+    height: 362%; /* Hauteur de la ligne pour qu'elle traverse toute la hauteur de l'élément */
+    background-color: white; /* Couleur de la ligne */
+}
+.colonne_titre_droite {
+    margin-left: 40px;
+}
+.colonne_formulaire_case_gauche {
+    width: 90%;
+}
+.colonne_formulaire_case_droite {
+    width: 90%;
+    margin-left: 40px;
+}
 /* Responsive */
 @media (max-width: 768px) {
     .tete {
@@ -160,5 +111,21 @@ header nav .commander {
 
     .pied-nav {
         font-size: 14px; /* Réduit la taille de la police des liens sur les petits écrans */
+    }
+    .colonne_titre_droite {
+        margin-left: 0; /* Supprime la marge à gauche pour centrer ou aligner */
+    }
+    .colonne_formulaire_case_gauche,
+    .colonne_formulaire_case_droite {
+        width: 100%; /* Ajuste la largeur pour prendre toute la place */
+        margin-left: 0; /* Supprime la marge gauche pour éviter un décalage */
+    }
+    .formulaire_nombre {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .colonne_titre::before {
+        display: none;
     }
 }
