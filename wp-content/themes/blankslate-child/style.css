@@ -54,12 +54,21 @@ header nav .commander {
     font-weight: 400;  
 
 }
-
-.colonne_formulaire_nombre {
-    width: 25%;
+/* Pour Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+/* Pour Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .formulaire_nombre {
-    margin-left: 100px;
+    width: 15% !important;
+    margin: auto;
 }
 .colonne_titre {
     font-size: 30px;
@@ -122,6 +131,7 @@ header nav .commander {
     }
     .formulaire_nombre {
         margin-left: 0px;
+        width: 15% !important;
     }
 }
 @media screen and (max-width: 768px) {

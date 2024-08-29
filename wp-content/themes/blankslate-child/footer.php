@@ -3,7 +3,7 @@
 </div>
 <footer class="pied">
     <div>
-        <a href="<?php echo esc_url('http://planty.local/'); ?>" class="pied-nav">Mentions légales</a>
+        <a href="<?php echo esc_url('https://planty.local/'); ?>" class="pied-nav">Mentions légales</a>
     </div>
     </footer>
 </body>

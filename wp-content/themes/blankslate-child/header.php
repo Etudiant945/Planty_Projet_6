@@ -14,7 +14,7 @@
 <header class="tete">
     <!-- Logo du site -->
     <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img class="tete_img" src="http://planty.local/wp-content/uploads/2024/08/Logo.png" alt="<?php bloginfo('name'); ?>">
+        <img class="tete_img" src="https://planty.local/wp-content/uploads/2024/08/Logo.png" alt="<?php bloginfo('name'); ?>">
     </a>
     <!-- Menu de navigation -->
     <nav>
@@ -22,7 +22,7 @@
         <?php
         // Affiche le bouton seulement pour les administrateurs
         if (current_user_can('administrator')) {
-            echo '<a href="http://planty.local/wp-admin" class="admin-button">Admin</a>';
+            echo '<a href="https://planty.local/wp-admin" class="admin-button">Admin</a>';
         }
         ?>
         <a href="<?php echo esc_url(home_url('/precommande/')); ?>" class="commander">Commander</a>
