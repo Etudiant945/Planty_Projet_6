@@ -116,7 +116,8 @@ input[type="number"] {
         gap:20px
     }
 
-    nav {
+    #planty-menu {
+        display:flex;
         flex-direction: column; /* Disposer les éléments du menu en colonne */
         margin-top: 10px; /* Ajouter un espacement au-dessus du menu */
     }
