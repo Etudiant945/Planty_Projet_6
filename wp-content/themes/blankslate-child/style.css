@@ -24,22 +24,29 @@ body {
 .tete_img {
     width: 300px;
     height: 30px;
+    padding-left: 37px;
 }
-header nav {
+#planty-menu  {
     display: flex;
     align-items: center;
     gap: 30px; /* Espacement entre les liens */
 }
-header nav a {
+#planty-menu a {
     text-decoration: none;
     color: black;
     font-weight: 700;
 }
-header nav .commander {
+#planty-menu .commander a {
     color: white;
     display: inline-block; /* Pour que les propriétés de bordure et de padding s'appliquent correctement */
     padding: 30px 100px; /* Ajouter de l'espace à l'intérieur de la boîte */
     background-color:#DC9F96;
+}
+.commander {
+    order:3;
+}
+.order {
+    order:2;
 }
 /* pied de page */
 .pied {
@@ -68,10 +75,13 @@ input[type="number"] {
 
 .formulaire_nombre {
     width: 15% !important;
+    border-radius: 0% !important;
     margin: auto;
 }
 .colonne_titre {
     font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
     color: white;
     border-top: 2px solid white;
     padding-top: 60px;
@@ -80,11 +90,11 @@ input[type="number"] {
 .colonne_titre::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 60px;
     left: 50%; /* Positionne la ligne verticalement au centre */
     transform: translateX(-50%); /* Centre parfaitement la ligne */
     width: 2px; /* Largeur de la ligne */
-    height: 362%; /* Hauteur de la ligne pour qu'elle traverse toute la hauteur de l'élément */
+    height: 330%; /* Hauteur de la ligne pour qu'elle traverse toute la hauteur de l'élément */
     background-color: white; /* Couleur de la ligne */
 }
 .colonne_titre_droite {

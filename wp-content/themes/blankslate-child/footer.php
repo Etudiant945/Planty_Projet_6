@@ -5,9 +5,7 @@
     <div>
         <a href="<?php echo esc_url('https://planty.local/'); ?>" class="pied-nav">Mentions légales</a>
     </div>
-    </footer>
-</body>
-</html>
+</footer>
 </div>
 <?php wp_footer(); ?>
 </body>

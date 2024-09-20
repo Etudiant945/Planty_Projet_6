@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form Plugin by Fluent Forms for Quiz, Survey, and Drag &amp; Drop WP Form Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-08-14 13:49:11+0000\n"
+"PO-Revision-Date: 2024-09-02 11:15:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -748,11 +748,11 @@ msgstr "Restriction par IP"
 msgid "Enabling this restrict or allow users to submit forms depends on selection."
 msgstr "Activer cela restreint ou autorise les internautes à envoyer des formulaires en fonction de la sélection."
 
-#: app/Hooks/filters.php:354 app/Models/Form.php:163
+#: app/Hooks/filters.php:357 app/Models/Form.php:163
 msgid "Sorry! You can't submit a form the country you are residing."
 msgstr "Désolé, vous ne pouvez pas envoyer de formulaire pour le pays dans lequel vous résidez."
 
-#: app/Hooks/filters.php:348 app/Models/Form.php:157
+#: app/Hooks/filters.php:351 app/Models/Form.php:157
 #: app/Services/Form/FormValidationService.php:633
 msgid "Sorry! You can't submit a form from your IP address."
 msgstr "Désolé, vous ne pouvez pas envoyer de formulaire depuis votre adresse IP."
@@ -761,7 +761,7 @@ msgstr "Désolé, vous ne pouvez pas envoyer de formulaire depuis votre adresse�
 msgid "Default (Form Styler)"
 msgstr "Par défaut (outil de stylisation de formulaire)"
 
-#: app/Hooks/filters.php:360 app/Models/Form.php:169
+#: app/Hooks/filters.php:363 app/Models/Form.php:169
 #: app/Services/Form/FormValidationService.php:674
 msgid "Sorry! Your submission contains some restricted keywords."
 msgstr "Désolé ! Votre envoi contient des mots-clés restreints."
@@ -878,7 +878,7 @@ msgstr "Champ obligatoire"
 msgid "Inherit Theme Style"
 msgstr "Hériter du style du thème"
 
-#: app/Modules/Component/Component.php:918
+#: app/Modules/Component/Component.php:924
 msgid "Invalid Form!"
 msgstr "Formulaire invalide !"
 
@@ -1235,6 +1235,18 @@ msgstr "ID d’action invalide. Aucun état trouvé."
 msgid "The group \"%s\" does not exist."
 msgstr "Le groupe « %s » n’existe pas."
 
+#: app/Services/Libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:471
+msgid "Unknown partial args matching value."
+msgstr "Valeur de correspondance partielle d’argument inconnue."
+
+#: app/Modules/Registerer/TranslationString.php:1176
+msgid "Single"
+msgstr "Unique"
+
+#: app/Services/Libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:124
+msgid "Count"
+msgstr "Nombre"
+
 #. translators: %s: action ID
 #. translators: %s is the action ID
 #: app/Services/Libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:632
@@ -1248,18 +1260,6 @@ msgstr "Le groupe « %s » n’existe pas."
 #: app/Services/Libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:974
 msgid "Unidentified action %s"
 msgstr "Action %s non identifiée"
-
-#: app/Services/Libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:471
-msgid "Unknown partial args matching value."
-msgstr "Valeur de correspondance partielle d’argument inconnue."
-
-#: app/Modules/Registerer/TranslationString.php:1176
-msgid "Single"
-msgstr "Unique"
-
-#: app/Services/Libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:124
-msgid "Count"
-msgstr "Nombre"
 
 #: app/Services/Libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:122
 msgid "Action Status"
@@ -1438,7 +1438,7 @@ msgstr "Vos clés Turnsite sont valides."
 msgid "Your Turnstile settings is saved."
 msgstr "Les réglages de Turnstile sont enregistrés."
 
-#: app/Hooks/filters.php:188
+#: app/Hooks/filters.php:191
 msgid "Declined"
 msgstr "Décliné"
 
@@ -2491,11 +2491,13 @@ msgstr "Définissez le nombre maximum d’éléments qu’un utilisateur ou une 
 #: app/Modules/Registerer/TranslationString.php:840
 #: app/Modules/Widgets/OxyFluentFormWidget.php:36
 #: app/Modules/Widgets/OxyFluentFormWidget.php:469
+#: assets/js/fluent_gutenblock.js:4318 assets/js/fluent_gutenblock.js:4362
 msgid "Select a Form"
 msgstr "Choisir un Formulaire"
 
 #: app/Modules/Registerer/AdminBar.php:132 app/Modules/Registerer/Menu.php:408
 #: app/Modules/Registerer/Menu.php:409 app/Views/admin/global_menu.php:19
+#: assets/js/fluent_gutenblock.js:4385
 msgid "Forms"
 msgstr "Formulaires"
 
@@ -2915,7 +2917,7 @@ msgstr "0% terminé"
 msgid "100% Completed"
 msgstr "100% terminé"
 
-#: app/Hooks/filters.php:271
+#: app/Hooks/filters.php:274
 #: app/Services/Integrations/GlobalNotificationManager.php:238
 #: app/Services/Integrations/GlobalNotificationService.php:62
 msgid "(truncated)"
@@ -3276,7 +3278,7 @@ msgstr "Si la validation a échoué, elle affichera ce message"
 msgid "Email address need to be unique."
 msgstr "L’adresse e-mail doit être unique."
 
-#: app/Hooks/filters.php:186
+#: app/Hooks/filters.php:189
 msgid "Accepted"
 msgstr "Accepté"
 
@@ -3873,159 +3875,159 @@ msgstr "La soumission du formulaire est maintenant fermée."
 msgid "Settings & Integrations"
 msgstr "Réglages & intégrations"
 
-#: app/Modules/Component/Component.php:1191
+#: app/Modules/Component/Component.php:1197
 msgid "Year"
 msgstr "Année"
 
-#: app/Modules/Component/Component.php:1189
+#: app/Modules/Component/Component.php:1195
 msgid "PM"
 msgstr "PM"
 
-#: app/Modules/Component/Component.php:1188
+#: app/Modules/Component/Component.php:1194
 msgid "AM"
 msgstr "AM"
 
-#: app/Modules/Component/Component.php:1183
+#: app/Modules/Component/Component.php:1189
 msgid " to "
 msgstr " à "
 
-#: app/Modules/Component/Component.php:1164
+#: app/Modules/Component/Component.php:1170
 msgid "Thu"
 msgstr "Jeu"
 
-#: app/Modules/Component/Component.php:1163
+#: app/Modules/Component/Component.php:1169
 msgid "Wed"
 msgstr "Mer"
 
-#: app/Modules/Component/Component.php:1162
+#: app/Modules/Component/Component.php:1168
 msgid "Tue"
 msgstr "Mar"
 
-#: app/Modules/Component/Component.php:1157
+#: app/Modules/Component/Component.php:1163
 #: app/Modules/Registerer/TranslationString.php:732
 msgid "Saturday"
 msgstr "Samedi"
 
-#: app/Modules/Component/Component.php:1156
+#: app/Modules/Component/Component.php:1162
 #: app/Modules/Registerer/TranslationString.php:731
 msgid "Friday"
 msgstr "Vendredi"
 
-#: app/Modules/Component/Component.php:1155
+#: app/Modules/Component/Component.php:1161
 #: app/Modules/Registerer/TranslationString.php:730
 msgid "Thursday"
 msgstr "Jeudi"
 
-#: app/Modules/Component/Component.php:1154
+#: app/Modules/Component/Component.php:1160
 #: app/Modules/Registerer/TranslationString.php:729
 msgid "Wednesday"
 msgstr "Mercredi"
 
-#: app/Modules/Component/Component.php:1153
+#: app/Modules/Component/Component.php:1159
 #: app/Modules/Registerer/TranslationString.php:728
 msgid "Tuesday"
 msgstr "Mardi"
 
-#: app/Modules/Component/Component.php:1152
+#: app/Modules/Component/Component.php:1158
 #: app/Modules/Registerer/TranslationString.php:727
 msgid "Monday"
 msgstr "Lundi"
 
-#: app/Modules/Component/Component.php:1151
+#: app/Modules/Component/Component.php:1157
 #: app/Modules/Registerer/TranslationString.php:733
 msgid "Sunday"
 msgstr "Dimanche"
 
-#: app/Modules/Component/Component.php:1146
+#: app/Modules/Component/Component.php:1152
 msgid "December"
 msgstr "Décembre"
 
-#: app/Modules/Component/Component.php:1145
+#: app/Modules/Component/Component.php:1151
 msgid "November"
 msgstr "Novembre"
 
-#: app/Modules/Component/Component.php:1144
+#: app/Modules/Component/Component.php:1150
 msgid "October"
 msgstr "Octobre"
 
-#: app/Modules/Component/Component.php:1143
+#: app/Modules/Component/Component.php:1149
 msgid "September"
 msgstr "Septembre"
 
-#: app/Modules/Component/Component.php:1142
+#: app/Modules/Component/Component.php:1148
 msgid "August"
 msgstr "Août"
 
-#: app/Modules/Component/Component.php:1141
+#: app/Modules/Component/Component.php:1147
 msgid "July"
 msgstr "Juillet"
 
-#: app/Modules/Component/Component.php:1140
+#: app/Modules/Component/Component.php:1146
 msgid "June"
 msgstr "Juin"
 
-#: app/Modules/Component/Component.php:1138
+#: app/Modules/Component/Component.php:1144
 msgid "April"
 msgstr "Avril"
 
-#: app/Modules/Component/Component.php:1137
+#: app/Modules/Component/Component.php:1143
 msgid "March"
 msgstr "Mars"
 
-#: app/Modules/Component/Component.php:1136
+#: app/Modules/Component/Component.php:1142
 msgid "February"
 msgstr "Février"
 
-#: app/Modules/Component/Component.php:1135
+#: app/Modules/Component/Component.php:1141
 msgid "January"
 msgstr "Janvier"
 
-#: app/Modules/Component/Component.php:1132
+#: app/Modules/Component/Component.php:1138
 msgid "Dec"
 msgstr "Déc"
 
-#: app/Modules/Component/Component.php:1131
+#: app/Modules/Component/Component.php:1137
 msgid "Nov"
 msgstr "Nov"
 
-#: app/Modules/Component/Component.php:1130
+#: app/Modules/Component/Component.php:1136
 msgid "Oct"
 msgstr "Oct"
 
-#: app/Modules/Component/Component.php:1128
+#: app/Modules/Component/Component.php:1134
 msgid "Aug"
 msgstr "Août"
 
-#: app/Modules/Component/Component.php:1127
+#: app/Modules/Component/Component.php:1133
 msgid "Jul"
 msgstr "Juil"
 
-#: app/Modules/Component/Component.php:1126
+#: app/Modules/Component/Component.php:1132
 msgid "Jun"
 msgstr "Juin"
 
-#: app/Modules/Component/Component.php:1125
-#: app/Modules/Component/Component.php:1139
+#: app/Modules/Component/Component.php:1131
+#: app/Modules/Component/Component.php:1145
 msgid "May"
 msgstr "Mai"
 
-#: app/Modules/Component/Component.php:1124
+#: app/Modules/Component/Component.php:1130
 msgid "Apr"
 msgstr "Avr"
 
-#: app/Modules/Component/Component.php:1122
+#: app/Modules/Component/Component.php:1128
 msgid "Feb"
 msgstr "Fév"
 
-#: app/Modules/Component/Component.php:1121
+#: app/Modules/Component/Component.php:1127
 msgid "Jan"
 msgstr "Jan"
 
-#: app/Modules/Component/Component.php:1118
+#: app/Modules/Component/Component.php:1124
 msgid "Next Month"
 msgstr "Mois suivant"
 
-#: app/Modules/Component/Component.php:1117
+#: app/Modules/Component/Component.php:1123
 msgid "Previous Month"
 msgstr "Mois précédent"
 
@@ -4103,19 +4105,19 @@ msgstr "Centre"
 msgid "Element Label"
 msgstr "Libellé de l’élément"
 
-#: app/Modules/Component/Component.php:1166
+#: app/Modules/Component/Component.php:1172
 msgid "Sat"
 msgstr "Sam"
 
-#: app/Modules/Component/Component.php:1165
+#: app/Modules/Component/Component.php:1171
 msgid "Fri"
 msgstr "Ven"
 
-#: app/Modules/Component/Component.php:1161
+#: app/Modules/Component/Component.php:1167
 msgid "Mon"
 msgstr "Lun"
 
-#: app/Modules/Component/Component.php:1160
+#: app/Modules/Component/Component.php:1166
 msgid "Sun"
 msgstr "Dim"
 
@@ -4183,23 +4185,23 @@ msgstr "JS/CSS personnalisé"
 msgid "Sorry, You do not have permission to view this form"
 msgstr "Désolé, vous n’avez pas la permission de voir ce formulaire"
 
-#: app/Modules/Component/Component.php:1123
+#: app/Modules/Component/Component.php:1129
 msgid "Mar"
 msgstr "Mar"
 
-#: app/Modules/Component/Component.php:1129
+#: app/Modules/Component/Component.php:1135
 msgid "Sep"
 msgstr "Sep"
 
-#: app/Modules/Component/Component.php:1184
+#: app/Modules/Component/Component.php:1190
 msgid "Wk"
 msgstr "Weekend"
 
-#: app/Modules/Component/Component.php:1185
+#: app/Modules/Component/Component.php:1191
 msgid "Scroll to increment"
 msgstr "Faites défiler vers l’incrément"
 
-#: app/Modules/Component/Component.php:1186
+#: app/Modules/Component/Component.php:1192
 msgid "Click to toggle"
 msgstr "Cliquez ici pour basculer"
 
@@ -4653,14 +4655,6 @@ msgstr "Les types d’images autorisés ne correspondent pas"
 msgid "File Upload"
 msgstr "Téléchargement d’un fichier"
 
-#: app/Modules/Component/Component.php:299
-#: app/Services/Form/FormService.php:380
-#: app/Services/FormBuilder/DefaultElements.php:1275
-#: app/Services/FormBuilder/DefaultElements.php:1299
-#: app/Services/Migrator/Classes/BaseMigrator.php:979
-msgid "Ratings"
-msgstr "Evaluations"
-
 #: app/Services/FormBuilder/DefaultElements.php:1292
 msgid "Nice"
 msgstr "Nice"
@@ -4882,6 +4876,14 @@ msgstr "C’est le titre de champ que l’internaute verra lors du remplissage d
 #: app/Modules/Form/Settings/FormCssJs.php:217
 msgid "Custom CSS & JS successfully updated"
 msgstr "CSS et JS personnalisés bien mis à jour"
+
+#: app/Modules/Component/Component.php:299
+#: app/Services/Form/FormService.php:380
+#: app/Services/FormBuilder/DefaultElements.php:1275
+#: app/Services/FormBuilder/DefaultElements.php:1299
+#: app/Services/Migrator/Classes/BaseMigrator.php:979
+msgid "Ratings"
+msgstr "Évaluations"
 
 #: app/Modules/Registerer/AdminBar.php:107 app/Modules/Registerer/Menu.php:385
 #: app/Modules/Registerer/TranslationString.php:1021
@@ -5789,7 +5791,8 @@ msgstr "Nouveau formulaire"
 #: app/Modules/Widgets/FluentFormWidget.php:28
 #: app/Modules/Widgets/FluentFormWidget.php:93
 #: app/Modules/Widgets/FluentFormWidget.php:100
-#: app/Modules/Widgets/OxygenWidget.php:39
+#: app/Modules/Widgets/OxygenWidget.php:39 assets/js/fluent_gutenblock.js:4382
+#: assets/js/fluent_gutenblock.js:4385
 msgid "Fluent Forms"
 msgstr "Fluent Forms"
 

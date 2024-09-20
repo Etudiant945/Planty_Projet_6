@@ -18,14 +18,14 @@
     </a>
     <!-- Menu de navigation -->
     <nav>
-        <a href="<?php echo esc_url(home_url('/nous-rencontrer/')); ?>">Nous rencontrer</a>
-        <?php
-        // Affiche le bouton seulement pour les administrateurs
-        if (current_user_can('administrator')) {
-            echo '<a href="https://planty.local/wp-admin" class="admin-button">Admin</a>';
-        }
-        ?>
-        <a href="<?php echo esc_url(home_url('/precommande/')); ?>" class="commander">Commander</a>
+    <?php
+            wp_nav_menu( 
+                array( 
+                    'theme_location' => 'main-menu',
+                    'menu_id'        => 'planty-menu',
+                ) 
+            );
+         ?>
     </nav>
 </header>
 <div id="container">
